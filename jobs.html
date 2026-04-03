@@ -42,6 +42,7 @@ Include at least two job position descriptions using semantic HTML.
             width: fit-content;
         }
 
+        /*creates the little 'closing soon' formatting*/
         aside {
             float: right;
             padding: 5px;
@@ -54,20 +55,10 @@ Include at least two job position descriptions using semantic HTML.
         }
 
         header {
-            background-color: aquamarine;
+            background-color: rgb(170, 255, 227);
             grid-row: 1;
             padding: 0px 10px;
         }
-
-        /* aside {
-            background-color: lightblue;
-            grid-column:1;
-            grid-row: 2;
-            max-width: 400px;
-            min-width: 100px;
-            padding: 10px 10px;
-            width: auto;
-        } */
 
         footer {
             grid-row: 4;
@@ -170,6 +161,7 @@ Include at least two job position descriptions using semantic HTML.
     <main>
         <h2 style="font-size: 40px; margin: 20px;">Currently listed jobs:</h2>
         <section id="jobs">
+            <!--first job-->
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Junior Web Developer</h2>
@@ -201,6 +193,7 @@ Include at least two job position descriptions using semantic HTML.
                 </section>
             </section>
 
+            <!--second job-->
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Junior Web Developer</h2>
@@ -231,6 +224,7 @@ Include at least two job position descriptions using semantic HTML.
                 </section>
             </section>
 
+            <!--third job-->
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Senior Project Manager</h2>
@@ -265,6 +259,7 @@ Include at least two job position descriptions using semantic HTML.
 
         </section>
         
+        <!--section describing stuff required for all jobs-->
         <section style="margin: 20px;">
             <h2>Criteria for all jobs:</h2>
             <p>
@@ -278,9 +273,7 @@ Include at least two job position descriptions using semantic HTML.
         </section>
     </main>
 
-    <!-- <aside>i am the aside bit</aside> -->
-    
-
+    <!--footer at bottom of page-->
     <footer>
         idk, footer stuff i guess
     </footer>

@@ -1,0 +1,232 @@
+<!-- REQUIREMENTS:
+Include at least two job position descriptions using semantic HTML.
+
+    Each job must include:
+        Reference number (exactly 5 alphanumeric characters)
+        Job title and short description
+        Salary and reporting line
+        Key responsibilities
+        Essential and preferable requirements
+    Use headings with at least two levels
+    Use multiple <section> elements
+    Include one ordered list and one unordered list
+    Include at least one <aside> element
+    Content must be realistic, concise, and industry‑appropriate -->
+
+<!-- source for overflow text code
+    https://stackoverflow.com/questions/27441404/how-to-expand-a-div-and-its-contents-on-hover-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs page</title>
+    
+    <link rel="stylesheet" href="style/styles.css">
+
+    <style>
+
+        body {
+            margin: 0px;
+            display: grid;
+        }
+
+        main {
+            grid-column: 2;
+            grid-row: 2;
+            background-color: white;
+            min-height: 500px;
+            margin: 0px 0px;
+            padding: 0 0;
+            width: 75%;
+            float: right;
+        }
+
+        header {
+            background-color: aquamarine;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 1;
+        }
+
+        aside {
+            background-color: lightblue;
+            grid-column: 1;
+            grid-row: 2;
+            max-width: 400px;
+            min-width: 100px;
+            padding: 10px 10px;
+            width: 25%;
+        }
+
+        footer {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row: 4;
+            background-color: blueviolet;
+        }
+
+        #jobs {
+            margin: 20px 20px;
+            min-height: 200px;
+            display:flex;
+            width:fit-content;
+            justify-content:space-between;
+            flex-wrap: wrap;
+            border: rgb(235, 235, 235) 2px solid;
+            background-color: white;
+            border-radius: 10px;
+        }
+
+        .job {
+            width:45%;
+            min-width: 400px;
+            height: fit-content;
+            border: rgb(245, 245, 245) 2px solid;
+            background-color: white;
+            margin: 20px 20px;
+            margin-inline-end: 20px;
+            margin-inline-start: 20px;
+            margin-inline: 5px;
+            display: grid;
+        }
+
+        .job:hover {
+            border: black 2px solid;
+            height: fit-content;
+        }
+
+        .job .job_header {
+            display: flex;
+            margin: 0px 0px;
+            justify-content:space-between;
+            background-color: lightblue;
+        }
+
+        .job .job_header .job_name{
+            margin: 0px 0px;
+            padding: 5px 5px;
+        }
+
+        .job .job_header .job_id{
+            margin: 0px 0px;
+            padding: 3px 3px;
+            color: white;
+        }
+
+        .job .job_content{
+            padding: 5px 5px;
+            margin: 0px 0px;
+            background-color: white;
+            overflow: hidden;
+            max-height: 50px;
+        }
+        .job:hover .job_content{
+            padding: 5px 5px;
+            margin: 0px 0px;
+            background-color: white;
+            max-height: 10000px;
+        }
+        .job .job_elipsis{
+            padding: 0px 0px;
+            margin: 0px 0px;
+            height: 20px;
+        }
+        .job .job_elipsis h3{
+            padding: 0px 0px;
+            margin: 0px 5px;
+        }
+        .job:hover .job_elipsis{
+            display: none;
+        }
+
+        .job .job_content p{
+            padding: 0px 0px;
+            margin: 0px 0px;
+        }
+        .job .job_content ul{
+            padding: 0px 20px;
+            margin: 0px 0px;
+        }
+        .my_list{
+            /*margin: 0px 0px;*/
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Company</h1>
+    </header>
+
+    <aside>i am the aside bit</aside>
+    
+    <main>
+        <h2 style="font-size: 40px; margin: 20px; color: rgb(32, 61, 190)">Currently listed jobs:</h2>
+        <section id="jobs">
+            <section class="job">
+                <section class="job_header">
+                    <h2 class="job_name"> Junior Web Developer</h2>
+                    <h3 class="job_id">#A8FC2</h3>
+                </section>
+                
+                <section class="job_content">
+                    <p>help create unique and creative websites for clients to meet their needs</p>
+                        <ul>
+                            <li>Salary: $60,000</li>
+                            <li>Reporting line: Manager etc.</li>
+                            <li>Key responsibilities: Making webpages</li>
+                        </ul>
+                    <br>words<br>words<br>words<br>words
+                </section>
+                <section class="job_elipsis">
+                    <h3><strong>...</strong></h3>
+                </section>
+            </section>
+            <section class="job">
+                <section class="job_header">
+                    <h2 class="job_name"> Junior Web Developer</h2>
+                    <h3 class="job_id">#A8FC2</h3>
+                </section>
+                
+                <section class="job_content">
+                    <p>help create unique and creative websites for clients to meet their needs</p>
+                        <ul>
+                            <li>Salary: $60,000</li>
+                            <li>Reporting line: Manager etc.</li>
+                            <li>Key responsibilities: Making webpages</li>
+                        </ul>
+                    <br>words<br>words<br>words<br>words
+                </section>
+                <section class="job_elipsis">
+                    <h3><strong>...</strong></h3>
+                </section>
+            </section>
+            <section class="job">
+                <section class="job_header">
+                    <h2 class="job_name"> Junior Web Developer</h2>
+                    <h3 class="job_id">#A8FC2</h3>
+                </section>
+                
+                <section class="job_content">
+                    <p>help create unique and creative websites for clients to meet their needs</p>
+                        <ul>
+                            <li>Salary: $60,000</li>
+                            <li>Reporting line: Manager etc.</li>
+                            <li>Key responsibilities: Making webpages</li>
+                        </ul>
+                    <br>words<br>words<br>words<br>words
+                </section>
+                <section class="job_elipsis">
+                    <h3><strong>...</strong></h3>
+                </section>
+            </section>
+        </section>
+    </main>
+
+    <footer>
+        idk, footer stuff i guess
+    </footer>
+</body>
+</html>

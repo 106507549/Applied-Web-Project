@@ -30,49 +30,57 @@ Include at least two job position descriptions using semantic HTML.
         body {
             margin: 0px;
             display: grid;
+            grid-template-columns: 100%;
         }
 
         main {
-            grid-column: 2;
             grid-row: 2;
             background-color: white;
             min-height: 500px;
-            margin: 0px 0px;
-            padding: 0 0;
-            width: 75%;
+            margin: 0px 50px;
+            padding: 0 0%;
+            width: fit-content;
+        }
+
+        aside {
             float: right;
+            padding: 5px;
+            margin: 5px;
+            width: 25%;
+            border: 2px red dashed;
+            background-color: rgb(255, 235, 238);
+            border-radius: 10px;
+            text-align: center;
         }
 
         header {
             background-color: aquamarine;
-            grid-column-start: 1;
-            grid-column-end: 3;
             grid-row: 1;
+            padding: 0px 10px;
         }
 
-        aside {
+        /* aside {
             background-color: lightblue;
-            grid-column: 1;
+            grid-column:1;
             grid-row: 2;
             max-width: 400px;
             min-width: 100px;
             padding: 10px 10px;
-            width: 25%;
-        }
+            width: auto;
+        } */
 
         footer {
-            grid-column-start: 1;
-            grid-column-end: 3;
             grid-row: 4;
             background-color: blueviolet;
+            padding: 0px 10px;
         }
 
         #jobs {
             margin: 20px 20px;
             min-height: 200px;
             display:flex;
-            width:fit-content;
-            justify-content:space-between;
+            width:100% -20px;
+            justify-content:space-evenly;
             flex-wrap: wrap;
             border: rgb(235, 235, 235) 2px solid;
             background-color: white;
@@ -80,8 +88,7 @@ Include at least two job position descriptions using semantic HTML.
         }
 
         .job {
-            width:45%;
-            min-width: 400px;
+            width:400px;
             height: fit-content;
             border: rgb(245, 245, 245) 2px solid;
             background-color: white;
@@ -159,11 +166,9 @@ Include at least two job position descriptions using semantic HTML.
     <header>
         <h1>Company</h1>
     </header>
-
-    <aside>i am the aside bit</aside>
     
     <main>
-        <h2 style="font-size: 40px; margin: 20px; color: rgb(32, 61, 190)">Currently listed jobs:</h2>
+        <h2 style="font-size: 40px; margin: 20px;">Currently listed jobs:</h2>
         <section id="jobs">
             <section class="job">
                 <section class="job_header">
@@ -172,58 +177,109 @@ Include at least two job position descriptions using semantic HTML.
                 </section>
                 
                 <section class="job_content">
+                    <aside>closing soon</aside>
                     <p>help create unique and creative websites for clients to meet their needs</p>
                         <ul>
                             <li>Salary: $60,000</li>
-                            <li>Reporting line: Manager etc.</li>
+                            <li>Reporting line: Project Manager</li>
                             <li>Key responsibilities: Making webpages</li>
+                            <li>Essential requirements:
+                                <ul>
+                                    <li>Computer science degree</li>
+                                    <li>experience in HTML and CSS</li>
+                                </ul>
+                            </li>
+                            <li>Preferable requirements:
+                                <ul>
+                                    <li>experience with PHP and Javascript</li>
+                                </ul>
+                            </li>
                         </ul>
-                    <br>words<br>words<br>words<br>words
                 </section>
                 <section class="job_elipsis">
                     <h3><strong>...</strong></h3>
                 </section>
             </section>
+
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Junior Web Developer</h2>
-                    <h3 class="job_id">#A8FC2</h3>
+                    <h3 class="job_id">#C84HJ</h3>
                 </section>
                 
                 <section class="job_content">
                     <p>help create unique and creative websites for clients to meet their needs</p>
                         <ul>
                             <li>Salary: $60,000</li>
-                            <li>Reporting line: Manager etc.</li>
+                            <li>Reporting line: Project Manager</li>
                             <li>Key responsibilities: Making webpages</li>
+                            <li>Essential requirements:
+                                <ul>
+                                    <li>Computer science degree</li>
+                                    <li>experience in HTML and CSS</li>
+                                </ul>
+                            </li>
+                            <li>Preferable requirements:
+                                <ul>
+                                    <li>experience with PHP and Javascript</li>
+                                </ul>
+                            </li>
                         </ul>
-                    <br>words<br>words<br>words<br>words
                 </section>
                 <section class="job_elipsis">
                     <h3><strong>...</strong></h3>
                 </section>
             </section>
+
             <section class="job">
                 <section class="job_header">
-                    <h2 class="job_name"> Junior Web Developer</h2>
-                    <h3 class="job_id">#A8FC2</h3>
+                    <h2 class="job_name"> Senior Project Manager</h2>
+                    <h3 class="job_id">#FO8BI</h3>
                 </section>
                 
                 <section class="job_content">
-                    <p>help create unique and creative websites for clients to meet their needs</p>
+                    <aside>closing soon</aside>
+                    <p>Manage a team of developers to create industry leading websites for clients.</p>
                         <ul>
-                            <li>Salary: $60,000</li>
-                            <li>Reporting line: Manager etc.</li>
-                            <li>Key responsibilities: Making webpages</li>
+                            <li>Salary: $100,000</li>
+                            <li>Reporting line: CEO</li>
+                            <li>Key responsibilities: Team management</li>
+                            <li>Essential requirements:
+                                <ul>
+                                    <li>10 years experience in project management</li>
+                                    <li>Strong leadership skills</li>
+                                </ul>
+                            </li>
+                            <li>Preferable requirements:
+                                <ul>
+                                    <li>Know HTML and CSS</li>
+                                    <li>Computer science degree</li>
+                                </ul>
+                            </li>
                         </ul>
-                    <br>words<br>words<br>words<br>words
                 </section>
                 <section class="job_elipsis">
                     <h3><strong>...</strong></h3>
                 </section>
             </section>
+
+        </section>
+        
+        <section style="margin: 20px;">
+            <h2>Criteria for all jobs:</h2>
+            <p>
+                <ol>
+                    <li>Must live in Australia</li>
+                    <li>Must have right to work in Australia</li>
+                    <li>Must have experience with website development</li>
+                    <li>Must have a can-do attitude!</li>
+                </ol>
+            </p>
         </section>
     </main>
+
+    <!-- <aside>i am the aside bit</aside> -->
+    
 
     <footer>
         idk, footer stuff i guess

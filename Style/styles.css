@@ -32,3 +32,22 @@ footer {
     margin-top: 0px;
     margin-bottom: 0px;
 }
+
+/* For sections in the index page */
+nav a {
+          text-decoration: underline;
+          padding:0.6em 0.6em;
+         }   
+
+nav a:hover {
+  background-color: lightgray
+}
+nav b:hover {
+  background-color: lightgray
+}
+nav c:hover {
+  background-color: lightgray
+}
+nav d:hover {
+  background-color: lightgray
+}

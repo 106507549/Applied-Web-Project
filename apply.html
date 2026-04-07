@@ -1,0 +1,151 @@
+<!--
+Form Fields
+Job reference number	Exactly 5 alphanumeric characters
+First name	            Max 20 alpha characters
+Last name	            Max 20 alpha characters
+Date of birth	        dd/mm/yyyy
+Gender	                Radio buttons (fieldset + legend)
+Street Address	        Max 40 characters
+Suburb/Town	            Max 40 characters
+State	                Dropdown: VIC, NSW, QLD, NT, WA, SA, TAS, ACT
+Postcode	            Exactly 4 digits
+Email	                Valid format
+Phone number	        8–12 digits
+Skill list	            Checkbox inputs
+Other skills	        Textarea
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply to COMPANY</title>
+    <link rel="stylesheet" href="style/styles.css">
+    <style>
+        fieldset {
+            margin: 20px;
+            text-align: center;
+        }
+
+        #formDiv {
+            display: flex;
+            justify-content: center;
+            size: 2000%;
+            font-size: 150%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Company</h1>
+    </header>
+
+    <main>
+        <h2 style="font-size: 40px; margin: 20px;">Fill in the required information below to apply</h2>
+        <p style="margin-left: 10%;">For more info on available jobs click <a href="jobs.html">here</a></p>
+        
+        <hr>
+        <h3 style="font-size: 200%; text-align: center;">Application form:</h3>
+        <div id="formDiv">
+        <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+            <fieldset>
+                <legend><strong>Job reference number</strong></legend>
+                <label for="JobReferenceNumber">Job reference number:</label>
+                <br>
+                <input type="text" id="JobReferenceRumber" name="Job reference number" maxlength="5" minlength="5" required>
+
+            </fieldset>
+            <fieldset>
+                <legend><strong>Your info</strong></legend>
+                <label for="FirstName" >First name</label>
+                <input type="text" id="FirstName" pattern="[A-Za-z]+" maxlength="20" required name="First name">
+                <br>
+                <label for="LastName">Last name</label>
+                <input type="text" id="LastName" pattern="[A-Za-z]+" maxlength="20" required name="Last name">
+                <br><br>
+                <label for="DateOfBirth">Date of birth</label>
+                <input type="date" name="Date of birth" id="Date" required>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Gender</strong></legend>
+                <input type="radio" id="genderRadio" name="Gender" value="Male" required>
+                <label for="Male">Male</label>
+                <input type="radio" id="genderRadio" name="Gender" value="Female">
+                <label for="Female">Female</label>
+                <input type="radio" id="genderRadio" name="Gender" value="Other">
+                <label for="Other">Other</label>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Address</strong></legend>
+                <label for="Street Address" >Street Address</label>
+                <input type="text" id="Street Address" maxlength="40" required name="Street Address">
+                <br>
+                <label for="Suburb/Town" >Suburb/Town</label>
+                <input type="text" id="Suburb/Town" maxlength="40" required name="Suburb/Town">
+                <br>
+                <label for="State">State</label>
+                <select id="State" name="State" required>
+                    <option value="">Please Select</option>
+                    <option value="VIC">VIC</option>
+                    <option value="NSW">NSW</option>
+                    <option value="QLD">QLD</option>
+                    <option value="NT">NT</option>
+                    <option value="WA">WA</option>
+                    <option value="SA">SA</option>
+                    <option value="TAS">TAS</option>
+                    <option value="ACT">ACT</option>
+                </select>
+                <br>
+                <label for="Postcode" >Postcode</label>
+                <input type="text" id="Postcode" maxlength="4" minlength="4" required name="Suburb/Town">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Contact info</strong></legend>
+                <label for="Email" >Email</label>
+                <input type="text" id="Email" required name="Email">
+                <br>
+                <label for="PhoneNumber" >Phone number</label>
+                <input type="text" id="PhoneNumber" pattern="\d{8,12}" required name="Phone number">
+            </fieldset>
+            <fieldset>
+                <legend><strong>Skills</strong></legend>
+                <label for="HTML">HTML skills</label>
+                <input type="checkbox" id="HTML" value="HTML" name="Skills">
+                <label for="CSS">CSS skills</label>
+                <input type="checkbox" id="CSS" value="CSS" name="Skills">
+                <label for="JavaScript">JavaScript skills</label>
+                <input type="checkbox" id="JavaScript" value="JavaScript" name="Skills">
+                <label for="PHP">PHP skills</label>
+                <input type="checkbox" id="PHP" value="JavaScript" name="Skills">
+                <label for="MySQL">MySQL skills</label>
+                <input type="checkbox" id="MySQL" value="MySQL" name="Skills">
+                <br>
+                <label for="Managing">Managing</label>
+                <input type="checkbox" id="Managing" value="Managing" name="Skills">
+                <label for="ProblemSolving">Problem solving</label>
+                <input type="checkbox" id="ProblemSolving" value="ProblemSolving" name="Skills">
+                <br><br>
+                <label for="Other skills">Other skills</label>
+                <br>
+                <textarea name="Other skills" id="Other skills" rows="4" cols="50" placeholder="Other skills"></textarea>
+                <br>
+            </fieldset>
+            <div style="text-align: center;">
+            <input type="submit" value="Apply" class="button">
+            <input type="reset" value="Reset form" class="button">
+            </div>
+            </div>
+        </form>
+        <br>
+    </main>
+
+    <!--footer at bottom of page-->
+    <footer>
+        <br>
+        idk, footer stuff i guess
+        <br>
+    </footer>
+</body>
+</html>

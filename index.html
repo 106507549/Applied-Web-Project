@@ -23,14 +23,42 @@ Company image
 
 <style>
     th {
-        color: lightblue;
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+        border: 4px solid black
     }
 
     td {
         padding: 20px;
         font-size: larger;
-        border: 4px solid powderblue
+        border: 4px solid black;
     }
+
+    nav a:default{
+        color: white;
+        padding: 0.6em 0.6em;
+    }
+
+    nav a:hover {
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+    }
+
+    nav b:hover {
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+    }
+
+    nav c:hover {
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+    }
+
+    nav d:hover {
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+    }
+
 </style>
 
 <body>
@@ -38,7 +66,7 @@ Company image
     <header>
         <div class="searchbar">
             <nav>
-                <a class="active" href="index.html">Index</a>
+                <a class="active" href="index.html" >Index</a>
                 <a href="about.html">About</a>
                 <a href="apply.html">Apply</a>
                 <a href="jobs.html">Jobs</a>
@@ -46,11 +74,9 @@ Company image
                 <input type="submit" id="confirmSearch">
             </nav>
         </div>
+        <img src="Images/retail wizard white.png" width="20%" height="100%" alt="Company logo (Retail Wizards)"></a></p>
 
-        <img src="Images/logo.png" alt="Company logo"></a></p>
-
-
-        <h1>Company name</h1>
+        <h1>Retail Wizards</h1>
 
     </header>
 
@@ -94,10 +120,15 @@ Company image
         <p></p>
         <img src="Images/thing.png" , alt="Company group photo"></a></p>
         <p><em>A picture of three employees smiling happily.</em></p>
-        <a href="https://github.com/106507549/Applied-Web-Project">Github Page &nbsp</a>
-        <a href="https://group-name-optional.atlassian.net/jira/software/projects/SCRUM/boards/1">Jira Project Page
+
+        <div class="projectlinks">
+            <a href="https://github.com/106507549/Applied-Web-Project" id="github">Github Page &nbsp</a>
+            <a href="https://group-name-optional.atlassian.net/jira/software/projects/SCRUM/boards/1" id="jira">Jira Project Page
             &nbsp</a>
-        <a href="mailto:companyname.com"> Contact us here</a>
+            <a href="mailto:companyname.com"> Contact us here</a>
+        </div>
+
+       
     </main>
     <footer>
         <br> idk, footer stuff I guess</br>

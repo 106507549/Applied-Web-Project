@@ -36,11 +36,6 @@ body {
     display: grid;
     grid-template-columns: 100%;
 }
-
-header {
-    grid-row: 1;
-    padding: 0px 10px;
-}
 footer {
     grid-row: 4;
     padding: 30px 30px;

@@ -16,6 +16,20 @@ header, footer {
     /*background-attachment:fixed;*/
     background-color: rgb(82, 0, 105);
 }
+main {
+    grid-row: 2;
+    background-color: white;
+    min-height: 500px;
+    margin: 0px 50px;
+    padding: 0 0%;
+    width: fit-content;
+}
+
+header {
+    background-color: rgb(62, 0, 79);
+    grid-row: 1;
+    padding: 0px 10px;
+}
 
 body {
     margin: 0px;
@@ -46,6 +60,7 @@ footer {
 }
 
 /* For sections in the index page */
+
 nav a {
           text-decoration: underline;
           padding:0.6em 0.6em;
@@ -72,7 +87,10 @@ th, td {
 
 ul {font-size: large;}
 
-aside:hover {display: none}
+
+/*
+What was this for? 
+aside:hover {display: none}*/
 
 img[src*="Images/thing.png"] 
 {

@@ -2,6 +2,15 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+main {
+            grid-row: 2;
+            background-color: white;
+            min-height: 500px;
+            margin: 0px 50px;
+            padding: 0 0%;
+            width: fit-content;
+        }
+
 header {
     background-color: rgb(170, 255, 227);
     grid-row: 1;
@@ -60,7 +69,10 @@ th, td {
 
 ul {font-size: large;}
 
-aside:hover {display: none}
+
+/*
+What was this for? 
+aside:hover {display: none}*/
 
 img[src*="Images/thing.png"] 
 {

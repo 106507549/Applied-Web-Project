@@ -62,9 +62,9 @@ footer {
 /* For sections in the index page */
 
 nav a {
-          text-decoration: underline;
-          padding:0.6em 0.6em;
-         }   
+  text-decoration: underline;
+  padding:0.6em 0.6em;
+}
 
 nav a:hover {
   background-color: white;

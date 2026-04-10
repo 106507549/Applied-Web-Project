@@ -7,16 +7,25 @@ header, footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
-    display: flex;
+    text-align: center; 
+
+    /**/
     background-image: url("../images/magic wave purple.png");
     color:white;
     background-size: 30px;
     background-position: center;
-
-    /*background-attachment:fixed;*/
+    
     background-color: rgb(82, 0, 105);
 }
+
+header h1 {
+  font-size: 60px; 
+  margin: 0; 
+  color: 
+  white; 
+  float:right;
+}
+
 main {
     grid-row: 2;
     background-color: white;
@@ -35,6 +44,12 @@ body {
     margin: 0px;
     display: grid;
     grid-template-columns: 100%;
+    background-color: rgb(32, 0, 40);
+
+    background-image: url("../images/magic wave purple.png");
+    background-size: 30px;
+    background-position: center;
+    background-attachment: fixed;
 }
 footer {
     grid-row: 4;
@@ -48,10 +63,32 @@ footer {
 
 /* For sections in the index page */
 
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-around;
+  justify-content: center;
+  margin: 0px;
+}
+
 nav a {
   text-decoration: underline;
   padding:0.6em 0.6em;
+  margin: 00px 0px;
+  line-height: 2em;
 }
+
+#logo{
+  max-width: 100px;
+  width: auto;
+  padding: 10px;
+}
+
+/* #search_button{
+  background-color: white;
+  border: lightgray 2px solid;
+  border-radius: 5px;
+} */
 
 nav a:hover {
   background-color: white;
@@ -74,6 +111,11 @@ nav a{
 nav .current{
   border: white 2px solid;
 }
+
+nav .current:hover {
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+    }
 
 /*
 What was this for?

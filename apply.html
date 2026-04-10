@@ -80,10 +80,10 @@ Other skills	        Textarea
             <fieldset>
                 <legend><strong>Address</strong></legend>
                 <label for="Street Address" >Street Address</label>
-                <input type="text" id="Street Address" maxlength="40" required name="Street Address">
+                <input type="text" id="Street Address" maxlength="40" required name="Street Address" pattern="\w+">
                 <br>
                 <label for="Suburb/Town" >Suburb/Town</label>
-                <input type="text" id="Suburb/Town" maxlength="40" required name="Suburb/Town">
+                <input type="text" id="Suburb/Town" maxlength="40" required name="Suburb/Town" pattern="\w+">
                 <br>
                 <label for="State">State</label>
                 <select id="State" name="State" required>
@@ -104,7 +104,7 @@ Other skills	        Textarea
             <fieldset>
                 <legend><strong>Contact info</strong></legend>
                 <label for="Email" >Email</label>
-                <input type="text" id="Email" required name="Email" pattern="[A-Za-z0-9\.]+\@[A-Za-z0-9\.]+">
+                <input type="text" id="Email" required name="Email" pattern="[A-Za-z0-9\.]+\@\w+\.[A-Za-z0-9\.]+">
                 <br>
                 <label for="PhoneNumber" >Phone number</label>
                 <input type="text" id="PhoneNumber" pattern="\d{8,12}" required name="Phone number" min="8" max="12">

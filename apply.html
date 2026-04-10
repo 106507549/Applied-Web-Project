@@ -54,7 +54,7 @@ Other skills	        Textarea
                 <legend><strong>Job reference number</strong></legend>
                 <label for="JobReferenceNumber">Job reference number:</label>
                 <br>
-                <input type="text" id="JobReferenceRumber" name="Job reference number" maxlength="5" minlength="5" required>
+                <input type="text" id="JobReferenceRumber" name="Job reference number" maxlength="5" minlength="5" required pattern="\w+">
 
             </fieldset>
             <fieldset>
@@ -104,28 +104,28 @@ Other skills	        Textarea
             <fieldset>
                 <legend><strong>Contact info</strong></legend>
                 <label for="Email" >Email</label>
-                <input type="text" id="Email" required name="Email">
+                <input type="text" id="Email" required name="Email" pattern="[A-Za-z\.]+\@[A-Za-z\.]+">
                 <br>
                 <label for="PhoneNumber" >Phone number</label>
-                <input type="text" id="PhoneNumber" pattern="\d{8,12}" required name="Phone number">
+                <input type="text" id="PhoneNumber" pattern="\d{8,12}" required name="Phone number" min="8" max="12">
             </fieldset>
             <fieldset>
                 <legend><strong>Skills</strong></legend>
                 <label for="HTML">HTML skills</label>
-                <input type="checkbox" id="HTML" value="HTML" name="Skills">
+                <input type="checkbox" id="HTML" name="HTML">
                 <label for="CSS">CSS skills</label>
-                <input type="checkbox" id="CSS" value="CSS" name="Skills">
+                <input type="checkbox" id="CSS" name="CSS">
                 <label for="JavaScript">JavaScript skills</label>
-                <input type="checkbox" id="JavaScript" value="JavaScript" name="Skills">
+                <input type="checkbox" id="JavaScript" name="JavaScript">
                 <label for="PHP">PHP skills</label>
-                <input type="checkbox" id="PHP" value="JavaScript" name="Skills">
+                <input type="checkbox" id="PHP" name="PHP">
                 <label for="MySQL">MySQL skills</label>
-                <input type="checkbox" id="MySQL" value="MySQL" name="Skills">
+                <input type="checkbox" id="MySQL" name="MySQL">
                 <br>
                 <label for="Managing">Managing</label>
-                <input type="checkbox" id="Managing" value="Managing" name="Skills">
+                <input type="checkbox" id="Managing" name="Managing">
                 <label for="ProblemSolving">Problem solving</label>
-                <input type="checkbox" id="ProblemSolving" value="ProblemSolving" name="Skills">
+                <input type="checkbox" id="ProblemSolving" name="Problem Solving">
                 <br><br>
                 <label for="Other skills">Other skills</label>
                 <br>

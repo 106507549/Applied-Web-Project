@@ -16,6 +16,9 @@ Include at least two job position descriptions using semantic HTML.
 <!-- source for overflow text code
     https://stackoverflow.com/questions/27441404/how-to-expand-a-div-and-its-contents-on-hover-->
 
+<!-- source for has code
+    https://www.reddit.com/r/css/comments/16su50h/targeting_an_element_containing_another_element/-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,6 +29,7 @@ Include at least two job position descriptions using semantic HTML.
     <link rel="stylesheet" href="style/styles.css">
 
     <style>
+
         main {
             grid-row: 2;
             background-color: white;
@@ -48,7 +52,7 @@ Include at least two job position descriptions using semantic HTML.
         }
 
         #jobs {
-            margin: 20px 20px;
+            margin: 0px 0px;
             min-height: 200px;
             display:flex;
             width:100% -20px;
@@ -69,6 +73,10 @@ Include at least two job position descriptions using semantic HTML.
             margin-inline-start: 20px;
             margin-inline: 5px;
             display: grid;
+        }
+
+        .job:has(aside) {
+            order:-1;
         }
 
         .job:hover {
@@ -136,7 +144,10 @@ Include at least two job position descriptions using semantic HTML.
 </head>
 <body>
     <header>
-        <h1>Company</h1>
+        <img src="../images/retail wizard white.png" height="100px">
+        <div>
+            <h1 style="font-size: 60px; margin: 0; color: white;">Retail Wizards</h1>
+        </div>
     </header>
     
     <main>

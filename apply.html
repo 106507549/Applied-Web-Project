@@ -37,7 +37,25 @@ Other skills	        Textarea
 
 <body>
     <header>
-        <h1>Company</h1>
+        <div style="display: flex; align-items: center;">
+            <div id="logo"><a href="index.html"><img src="../images/retail wizard white.png" width="100%"> </a></div>
+            <a href="index.html" style="text-decoration: none;"> <h1>Retail Wizards</h1> </a>
+        </div>
+        
+        <!--two padding divs to make spacing nicer-->
+        <div></div>
+        <div></div>
+
+        <nav class="searchbar">
+            <div><a href="index.html">Main</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="apply.html" class="current">Apply</a></div>
+            <div><a href="jobs.html">Jobs</a></div>
+        </nav>
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <input id="search_button" type="submit" id="confirmSearch">
+        </div>
     </header>
 
     <main>

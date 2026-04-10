@@ -41,24 +41,8 @@ Company image
         padding: 0.6em 0.6em;
     }
 
-    nav a:hover {
-        background-color: hsl(281, 100%, 70%);
-        color: white;
-    }
-
-    nav b:hover {
-        background-color: hsl(281, 100%, 70%);
-        color: white;
-    }
-
-    nav c:hover {
-        background-color: hsl(281, 100%, 70%);
-        color: white;
-    }
-
-    nav d:hover {
-        background-color: hsl(281, 100%, 70%);
-        color: white;
+    main {
+        padding: 5px 5px;
     }
 
 </style>
@@ -66,20 +50,25 @@ Company image
 <body>
 
     <header>
-        <div class="searchbar">
-            <nav>
-                <a class="active" href="index.html" >Index</a>
-                <a href="about.html">About</a>
-                <a href="apply.html">Apply</a>
-                <a href="jobs.html">Jobs</a>
-                <input type="text" placeholder="Search">
-                <input type="submit" id="confirmSearch">
-            </nav>
+        <div style="display: flex; align-items: center;">
+            <div id="logo"><a href="index.html"><img src="../images/retail wizard white.png" width="100%"> </a></div>
+            <a href="index.html" style="text-decoration: none;"> <h1>Retail Wizards</h1> </a>
         </div>
-        <img src="Images/retail wizard white.png" width="20%" height="100%" alt="Company logo (Retail Wizards)"></a></p>
+        
+        <!--two padding divs to make spacing nicer-->
+        <div></div>
+        <div></div>
 
-        <h1>Retail Wizards</h1>
-
+        <nav class="searchbar">
+            <div><a href="index.html" class="current">Main</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="apply.html">Apply</a></div>
+            <div><a href="jobs.html">Jobs</a></div>
+        </nav>
+        <div class="searchbar">
+            <input type="text" placeholder="Search">
+            <input id="search_button" type="submit" id="confirmSearch">
+        </div>
     </header>
 
     <main>

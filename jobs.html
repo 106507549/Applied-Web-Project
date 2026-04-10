@@ -135,23 +135,24 @@ Include at least two job position descriptions using semantic HTML.
 </head>
 <body>
     <header>
-        <a href="index.html">
-        <img src="../images/retail wizard white.png" height="100px"> </a>
-        <a href="index.html" style="text-decoration: none;">
-        <div>
-            <h1 style="font-size: 60px; margin: 0; color: white;">Retail Wizards</h1>
+        <div style="display: flex; align-items: center;">
+            <div id="logo"><a href="index.html"><img src="../images/retail wizard white.png" width="100%"> </a></div>
+            <a href="index.html" style="text-decoration: none;"> <h1>Retail Wizards</h1> </a>
         </div>
-        </a>
+        
+        <!--two padding divs to make spacing nicer-->
+        <div></div>
+        <div></div>
 
+        <nav class="searchbar">
+            <div><a href="index.html">Main</a></div>
+            <div><a href="about.html">About</a></div>
+            <div><a href="apply.html">Apply</a></div>
+            <div><a href="jobs.html" class="current">Jobs</a></div>
+        </nav>
         <div class="searchbar">
-            <nav>
-                <a class="active" href="index.html">Index</a>
-                <a href="about.html">About</a>
-                <a href="apply.html">Apply</a>
-                <a href="jobs.html" class="current">Jobs</a>
-                <input type="text" placeholder="Search">
-                <input type="submit" id="confirmSearch">
-            </nav>
+            <input type="text" placeholder="Search">
+            <input id="search_button" type="submit" id="confirmSearch">
         </div>
     </header>
     
@@ -258,7 +259,7 @@ Include at least two job position descriptions using semantic HTML.
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Back-end Programmer</h2>
-                    <h3 class="job_id">#ST69HV</h3>
+                    <h3 class="job_id">#ST6HV</h3>
                 </section>
                 
                 <section class="job_content">
@@ -291,7 +292,7 @@ Include at least two job position descriptions using semantic HTML.
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Work Experience Placement</h2>
-                    <h3 class="job_id">#GXT823</h3>
+                    <h3 class="job_id">#GXT83</h3>
                 </section>
                 
                 <section class="job_content">
@@ -322,7 +323,7 @@ Include at least two job position descriptions using semantic HTML.
             <section class="job">
                 <section class="job_header">
                     <h2 class="job_name"> Product Manager</h2>
-                    <h3 class="job_id">#W841XJ</h3>
+                    <h3 class="job_id">#W41XJ</h3>
                 </section>
                 
                 <section class="job_content">

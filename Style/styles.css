@@ -58,31 +58,6 @@ footer {
     margin-bottom: 0px;
 }
 
-/* For sections in the index page */
-
-nav a {
-          text-decoration: underline;
-          padding:0.6em 0.6em;
-         }   
-
-nav a:hover {
-  background-color: lightgray
-}
-nav b:hover {
-  background-color: lightgray
-}
-nav c:hover {
-  background-color: lightgray
-}
-nav d:hover {
-  background-color: lightgray
-}
-
-th, td {
-  padding: 20px;
-  font-size: larger;
-  border: 4px solid powderblue
-}
 
 ul {font-size: large;}
 
@@ -90,6 +65,8 @@ ul {font-size: large;}
 /*
 What was this for? 
 aside:hover {display: none}*/
+
+/* I thought it would make it look more interesting but it was probably useless */
 
 img[src*="Images/thing.png"] 
 {

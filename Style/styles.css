@@ -4,8 +4,9 @@
 
 header, footer {
     padding: 5px 5px; 
-    display: inline; 
+    display: flex; 
     align-items: center; 
+    justify-content: space-between;
     text-align: center; 
     display: flex;
     background-image: url("../images/magic wave purple.png");
@@ -66,16 +67,8 @@ nav a {
          }   
 
 nav a:hover {
-  background-color: lightgray
-}
-nav b:hover {
-  background-color: lightgray
-}
-nav c:hover {
-  background-color: lightgray
-}
-nav d:hover {
-  background-color: lightgray
+  background-color: white;
+  color:rgb(82, 0, 105);
 }
 
 th, td {
@@ -86,6 +79,14 @@ th, td {
 
 ul {font-size: large;}
 
+nav a{
+  color: white;
+  border-radius: 10px;
+}
+
+nav .current{
+  border: white 2px solid;
+}
 
 /*
 What was this for? 

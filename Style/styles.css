@@ -92,6 +92,8 @@ nav .current{
 What was this for? 
 aside:hover {display: none}*/
 
+/* I thought it would make it look more interesting but it was probably useless */
+
 img[src*="Images/thing.png"] 
 {
   border: 2px solid black;

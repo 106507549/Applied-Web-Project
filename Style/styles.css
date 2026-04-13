@@ -4,10 +4,7 @@
 
 header, footer {
     padding: 5px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center; 
+    
 
     /**/
     background-image: url("../images/magic wave purple.png");
@@ -18,6 +15,16 @@ header, footer {
     background-color: rgb(82, 0, 105);
 }
 
+header {
+  /*background-color: rgb(62, 0, 79);*/
+  grid-row: 1;
+  padding: 0px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center; 
+}
+
 header h1 {
   font-size: 60px; 
   margin: 0; 
@@ -26,19 +33,66 @@ header h1 {
   float:right;
 }
 
-main {
-    grid-row: 2;
-    background-color: white;
-    min-height: 500px;
-    margin: 0px 50px;
-    padding: 0 0%;
+footer {
+  padding: 0px 0px;
+  grid-row: 4;
+  min-height: fit-content;
+  height: 90px;
+  max-width: 100%;
 }
 
-header {
-    /*background-color: rgb(62, 0, 79);*/
-    grid-row: 1;
-    padding: 0px 10px;
+footer ul{
+  display: inline-block;
+  margin: 0px;
 }
+footer a{
+  color: white;
+  font-size: 80%;
+  padding-right: 10px;
+}
+
+footer ul li{
+  display: inline;
+  list-style-type: none;
+  width: 10px;
+}
+footer p{
+  padding-top: 1%;
+  margin: 0%;
+}
+
+footer div{
+  width: 33%;
+  text-align: left;
+  float: right;
+  height: fit-content;
+}
+
+#projectlinks{
+  width: 22.5%
+}
+
+#Acknowledgement{
+  width: 45%;
+}
+
+footer h3{
+  padding: 0%;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+
+
+
+main {
+  grid-row: 2;
+  background-color: white;
+  min-height: 80vh;
+  margin: 0px 50px;
+  padding: 0 0%;
+}
+
+
 
 body {
     margin: 0px;
@@ -50,12 +104,7 @@ body {
     background-size: 30px;
     background-position: center;
     background-attachment: fixed;
-}
-footer {
-    grid-row: 4;
-    padding: 30px 30px;
-    height: 20px;
-
+    max-width: 100%;
 }
 
 /* For buttons in the apply page */
@@ -133,11 +182,16 @@ img[src*="Images/thing.png"]
 /*  APPLY PAGE SPECIFIC CSS */
 
 fieldset {
-  margin: 2.5%;
   text-align: center;
   border-radius: 10px;
   align-content: center;
+  justify-content: center;
+    align-self: center;
   border: 2px solid rgb(82, 0, 105);
+  min-height: fit-content;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 2.5%;
 }
 
 #formDiv {
@@ -151,7 +205,36 @@ fieldset {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0px;
+  
   width: 100%;
+}
+
+#FieldsetsFloatedRight{
+  float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding-bottom: 1.5%;
+}
+#FieldsetsFloatedRight fieldset{
+  width: 80%;
+  margin-right: 5%;
+  margin-left: 2.5%;
+}
+
+#FieldsetsFloatedLeft{
+  float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5%;
+}
+
+#FieldsetsFloatedLeft fieldset{
+  width: 80%;
+  margin-right: 2.5%;
+  margin-left: 5%;
 }
 
 #formBorder{
@@ -161,51 +244,49 @@ fieldset {
   border-radius: 10px;
   padding-bottom: 10px;
   z-index: 2;
-  width: 60%;
+  width: 60vw;
+  min-width: fit-content;
 }
 
 #JobReferenceNumberFieldset{
-  width: 42.5%;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  float: left;
-  height: 4em;
+  height: 4.4em;
+  padding-bottom: 0em;
+  padding-bottom: 2.5%;
 }
 
 #GenderFieldset {
-  width: 42.5%;
   margin-right: 0%;
   margin-top: 0%;
   padding-bottom: 1.125%;
-  float: left;
-  height: 3em;
+  padding-top: 0%;
+  height: 3.5em;
 }
 
 #PersonalInfoFieldset {
-  width: 42.5%;
   margin-left: 0%;
-  float: right;
-  height: 8em;
+  height: 8.6em;
+  padding-bottom: 3.625%;
 }
 
 #AddressFieldset {
-  width: 42.5%;
   margin-left: 0%;
   margin-top: 0%;
-  float: right;
   height: 8em;
+  min-height: 250px;
 }
 
 #ContactInfoFieldset {
-  width: 42.5%;
   margin-right: 0%;
   margin-top: 0%;
-  float: left;
   height: 8em;
+  min-height: 250px;
 }
 
 #SkillFieldset {
   clear: both;
+  width: 83.75%;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
 }
 
 input,select{
@@ -215,6 +296,7 @@ input,select{
 .button {
     height: 50px;
     width: 20%;
+    min-width: fit-content;
     font-size: 150%;
     text-align: center;
     margin: 30px;

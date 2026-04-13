@@ -24,7 +24,7 @@ Other skills	        Textarea
     <link rel="stylesheet" href="style/styles.css">
     <style>
         main{
-            margin: 0px 0px;
+            
             border: 0px;
             padding: 0px;
         }
@@ -67,66 +67,72 @@ Other skills	        Textarea
         
         <div id="formDiv">
             <div id="formBorder">
-                <h3 style="font-size: 200%; text-align: center; margin-bottom: 0px;">Application form:</h3>
+                <h3 style="font-size: 200%; text-align: center; margin-bottom: 20px;">Application form:</h3>
                 <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
-                    <fieldset id="JobReferenceNumberFieldset"> <!--Job Reference number fieldset-->
-                        <legend><strong>Job reference number</strong></legend>
-                        <label for="JobReferenceNumber">Job reference number:</label>
-                        <br>
-                        <input type="text" id="JobReferenceRumber" name="Job reference number" maxlength="5" minlength="5" required pattern="\w+">
-                    </fieldset > 
-                    <fieldset id="PersonalInfoFieldset"> <!--Personal info fieldset-->
-                        <legend><strong>Your info</strong></legend>
-                        <label for="FirstName" >First name</label>
-                        <input type="text" id="FirstName" pattern="[A-Za-z]+" maxlength="20" required name="First name">
-                        <br>
-                        <label for="LastName">Last name</label>
-                        <input type="text" id="LastName" pattern="[A-Za-z]+" maxlength="20" required name="Last name">
-                        <br><br>
-                        <label for="DateOfBirth">Date of birth</label>
-                        <input type="date" name="Date of birth" id="Date" required>
-                    </fieldset>
-                    <fieldset id="GenderFieldset"> <!--Gender fieldset-->
-                        <legend><strong>Gender</strong></legend>
-                        <input type="radio" id="genderRadio" name="Gender" value="Male" required>
-                        <label for="Male">Male</label>
-                        <input type="radio" id="genderRadio" name="Gender" value="Female">
-                        <label for="Female">Female</label>
-                        <input type="radio" id="genderRadio" name="Gender" value="Other">
-                        <label for="Other">Other</label>
-                    </fieldset>
-                    <fieldset id="AddressFieldset"> <!--Address fieldset-->
-                        <legend><strong>Address</strong></legend>
-                        <label for="Street Address" >Street Address</label>
-                        <input type="text" id="Street Address" maxlength="40" required name="Street Address" pattern="\w+">
-                        <br>
-                        <label for="Suburb/Town" >Suburb/Town</label>
-                        <input type="text" id="Suburb/Town" maxlength="40" required name="Suburb/Town" pattern="\w+">
-                        <br>
-                        <label for="State">State</label>
-                        <select id="State" name="State" required>
-                            <option value="">Please Select</option>
-                            <option value="VIC">VIC</option>
-                            <option value="NSW">NSW</option>
-                            <option value="QLD">QLD</option>
-                            <option value="NT">NT</option>
-                            <option value="WA">WA</option>
-                            <option value="SA">SA</option>
-                            <option value="TAS">TAS</option>
-                            <option value="ACT">ACT</option>
-                        </select>
-                        <br>
-                        <label for="Postcode" >Postcode</label>
-                        <input type="text" id="Postcode" maxlength="4" minlength="4" required name="Suburb/Town">
-                    </fieldset>
-                    <fieldset id="ContactInfoFieldset"> <!--Contact info fieldset-->
-                        <legend><strong>Contact info</strong></legend>
-                        <label for="Email" >Email</label>
-                        <input type="text" id="Email" required name="Email" pattern="[A-Za-z0-9\.]+\@\w+\.[A-Za-z0-9\.]+">
-                        <br><br>
-                        <label for="PhoneNumber" >Phone number</label>
-                        <input type="text" id="PhoneNumber" pattern="\d{8,12}" required name="Phone number" min="8" max="12">
-                    </fieldset>
+                    <div id="FieldsetsFloatedLeft">
+                        <fieldset id="JobReferenceNumberFieldset"> <!--Job Reference number fieldset-->
+                            <legend><strong>Job reference number</strong></legend>
+                            <label for="JobReferenceNumber">Job reference number:</label>
+                            <br>
+                            <input type="text" id="JobReferenceRumber" name="Job reference number" maxlength="5" minlength="5" required pattern="\w+">
+                        </fieldset > 
+ 
+                        <fieldset id="GenderFieldset"> <!--Gender fieldset-->
+                            <legend><strong>Gender</strong></legend>
+                            <input type="radio" id="genderRadio" name="Gender" value="Male" required>
+                            <label for="Male">Male</label>
+                            <input type="radio" id="genderRadio" name="Gender" value="Female">
+                            <label for="Female">Female</label>
+                            <input type="radio" id="genderRadio" name="Gender" value="Other">
+                            <label for="Other">Other</label>
+                        </fieldset>
+                                            
+                        <fieldset id="ContactInfoFieldset"> <!--Contact info fieldset-->
+                            <legend><strong>Contact info</strong></legend>
+                            <label for="Email" >Email</label>
+                            <input type="text" id="Email" required name="Email" pattern="[A-Za-z0-9\.]+\@\w+\.[A-Za-z0-9\.]+">
+                            <br><br>
+                            <label for="PhoneNumber" >Phone number</label>
+                            <input type="text" id="PhoneNumber" pattern="\d{8,12}" required name="Phone number" min="8" max="12">
+                        </fieldset>
+                    </div>
+                    <div id="FieldsetsFloatedRight">
+                                               <fieldset id="PersonalInfoFieldset"> <!--Personal info fieldset-->
+                            <legend><strong>Your info</strong></legend>
+                            <label for="FirstName" >First name</label>
+                            <input type="text" id="FirstName" pattern="[A-Za-z]+" maxlength="20" required name="First name">
+                            <br>
+                            <label for="LastName">Last name</label>
+                            <input type="text" id="LastName" pattern="[A-Za-z]+" maxlength="20" required name="Last name">
+                            <br><br>
+                            <label for="DateOfBirth">Date of birth</label>
+                            <input type="date" name="Date of birth" id="Date" required>
+                        </fieldset>
+                        <fieldset id="AddressFieldset"> <!--Address fieldset-->
+                            <legend><strong>Address</strong></legend>
+                            <label for="Street Address" >Street Address</label>
+                            <input type="text" id="Street Address" maxlength="40" required name="Street Address" pattern="\w+">
+                            <br>
+                            <label for="Suburb/Town" >Suburb/Town</label>
+                            <input type="text" id="Suburb/Town" maxlength="40" required name="Suburb/Town" pattern="\w+">
+                            <br>
+                            <label for="State">State</label>
+                            <select id="State" name="State" required>
+                                <option value="">Please Select</option>
+                                <option value="VIC">VIC</option>
+                                <option value="NSW">NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                            </select>
+                            <br>
+                            <label for="Postcode" >Postcode</label>
+                            <input type="text" id="Postcode" maxlength="4" minlength="4" required name="Suburb/Town">
+                        </fieldset>
+                    </div>
                     <fieldset id="SkillFieldset"> <!--Skill fieldset-->
                         <legend><strong>Skills</strong></legend>
                         <label for="HTML">HTML skills</label>

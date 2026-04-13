@@ -174,12 +174,16 @@ img[src*="Images/thing.png"]
 /*  APPLY PAGE SPECIFIC CSS */
 
 fieldset {
-  margin: 2.5%;
   text-align: center;
   border-radius: 10px;
   align-content: center;
+  justify-content: center;
+    align-self: center;
   border: 2px solid rgb(82, 0, 105);
   min-height: fit-content;
+  padding-right: 5%;
+  padding-left: 5%;
+  margin-bottom: 2.5%;
 }
 
 #formDiv {
@@ -193,7 +197,36 @@ fieldset {
   padding-top: 50px;
   padding-bottom: 50px;
   margin: 0px;
+  
   width: 100%;
+}
+
+#FieldsetsFloatedRight{
+  float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  padding-bottom: 1.5%;
+}
+#FieldsetsFloatedRight fieldset{
+  width: 80%;
+  margin-right: 5%;
+  margin-left: 2.5%;
+}
+
+#FieldsetsFloatedLeft{
+  float: left;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1.5%;
+}
+
+#FieldsetsFloatedLeft fieldset{
+  width: 80%;
+  margin-right: 2.5%;
+  margin-left: 5%;
 }
 
 #formBorder{
@@ -204,50 +237,48 @@ fieldset {
   padding-bottom: 10px;
   z-index: 2;
   width: 60vw;
+  min-width: fit-content;
 }
 
 #JobReferenceNumberFieldset{
-  width: 42.5%;
-  margin-right: 0%;
-  margin-bottom: 0%;
-  float: left;
-  height: 4em;
+  height: 4.4em;
+  padding-bottom: 0em;
+  padding-bottom: 2.5%;
 }
 
 #GenderFieldset {
-  width: 42.5%;
   margin-right: 0%;
   margin-top: 0%;
   padding-bottom: 1.125%;
-  float: left;
-  height: 3em;
+  padding-top: 0%;
+  height: 3.5em;
 }
 
 #PersonalInfoFieldset {
-  width: 42.5%;
   margin-left: 0%;
-  float: right;
-  height: 8em;
+  height: 8.6em;
+  padding-bottom: 3.625%;
 }
 
 #AddressFieldset {
-  width: 42.5%;
   margin-left: 0%;
   margin-top: 0%;
-  float: right;
   height: 8em;
+  min-height: 250px;
 }
 
 #ContactInfoFieldset {
-  width: 42.5%;
   margin-right: 0%;
   margin-top: 0%;
-  float: left;
   height: 8em;
+  min-height: 250px;
 }
 
 #SkillFieldset {
   clear: both;
+  width: 83.75%;
+  margin-left: 2.5%;
+  margin-bottom: 2.5%;
 }
 
 input,select{

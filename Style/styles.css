@@ -62,10 +62,18 @@ footer p{
 }
 
 footer div{
-  width: 50%;
+  width: 33%;
   text-align: left;
   float: right;
   height: fit-content;
+}
+
+#projectlinks{
+  width: 22.5%
+}
+
+#Acknowledgement{
+  width: 45%;
 }
 
 footer h3{

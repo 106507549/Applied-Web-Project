@@ -7,7 +7,7 @@ header, footer {
     
 
     /**/
-    background-image: url("../images/magic wave purple.png");
+    background-image: url("images/magic wave purple.png");
     color:white;
     background-size: 30px;
     background-position: center;
@@ -101,7 +101,7 @@ body {
     grid-template-columns: 100%;
     background-color: rgb(32, 0, 40);
 
-    background-image: url("../images/magic wave purple.png");
+    background-image: url("images/magic wave purple.png");
     background-size: 30px;
     background-position: center;
     background-attachment: fixed;
@@ -194,7 +194,7 @@ fieldset {
   justify-content: center;
   font-size: 150%;
   z-index: 1;
-  background-image: url("../images/MagicWaveSeeThrough.png");
+  background-image: url("images/MagicWaveSeeThrough.png");
   background-size: 25px;
   background-color: rgb(255, 255, 255, 0.5);
   padding-top: 50px;

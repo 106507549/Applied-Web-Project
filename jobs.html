@@ -19,6 +19,9 @@ Include at least two job position descriptions using semantic HTML.
 <!-- source for has code
     https://www.reddit.com/r/css/comments/16su50h/targeting_an_element_containing_another_element/-->
 
+<!-- source for overflow clip code
+    https://kilianvalkhof.com/2022/css-html/do-you-know-about-overflow-clip/-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -107,6 +110,7 @@ Include at least two job position descriptions using semantic HTML.
             margin: 0px 0px;
             padding: 3px 3px;
             color: white;
+            font-family: 'Andale Mono', Courier, monospace;
         }
 
         /*styling for the content portion (description) of the job*/
@@ -118,18 +122,38 @@ Include at least two job position descriptions using semantic HTML.
 
             max-height: 50px;
         }
-        .job:hover .job_content{
-            padding: 5px 5px;
-            margin: 0px 0px;
-            background-color: white;
-            max-height: none;
-        }
 
         /*styling for the elipsis shown when not expanded*/
         .job .job_elipsis{
             padding: 0px 0px;
             margin: 0px 0px;
             height: 20px;
+            background-color: white;
+            /* background-color: black; */
+        }
+
+        /*uses overflow clip if allowed by browser (some don't have it)*/
+        @supports (overflow:clip) {
+            .job .job_content{
+                overflow: clip;
+
+                overflow-clip-margin: 20px;
+            }
+
+            .job .job_elipsis{
+                background-image: url("style/images/white-gradient.png");
+                background-repeat: repeat-x;
+                background-color: rgba(0,0,0,0);
+                background-size: 20px;
+            }
+        }
+
+        /*allows the job content to expand to the full height when hovered over*/
+        .job:hover .job_content{
+            padding: 5px 5px;
+            margin: 0px 0px;
+            background-color: white;
+            max-height: none;
         }
         
         /*gives the h3 in the elipsis some margin and removes its padding*/

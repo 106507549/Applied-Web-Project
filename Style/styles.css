@@ -289,19 +289,159 @@ input,select{
 }
 
 .button {
-    height: 50px;
-    width: 20%;
-    min-width: fit-content;
-    font-size: 150%;
-    text-align: center;
-    margin: 30px;
-    margin-top: 0px;
-    margin-bottom: 10px;
-    background-color: hsl(281, 100%, 70%);
-    color: white;
-    border: 3px solid rgb(82, 0, 105);
-    height: fit-content;
-     border-radius: 10px;
+  height: 50px;
+  width: 20%;
+  min-width: fit-content;
+  font-size: 150%;
+  text-align: center;
+  margin: 30px;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  background-color: hsl(281, 100%, 70%);
+  color: white;
+  border: 3px solid rgb(82, 0, 105);
+  height: fit-content;
+  border-radius: 10px;
 }
 
 /*  APPLY PAGE SPECIFIC CSS END */
+
+/* JOB PAGE SPECIFIC CSS*/
+
+/*creates the little 'closing soon' formatting*/
+aside {
+  float: right;
+  padding: 5px;
+  margin: 5px;
+  width: 25%;
+  border: 2px red dashed;
+  background-color: rgb(255, 235, 238);
+  border-radius: 10px;
+  text-align: center;
+}
+
+/*styling for box containing all jobs*/
+#jobs {
+  margin: 0px 0px;
+  min-height: 200px;
+  display:flex;
+  width:100% -20px;
+  justify-content:space-evenly;
+  flex-wrap: wrap;
+  border: rgb(235, 235, 235) 2px solid;
+  background-color: white;
+  border-radius: 10px;
+}
+
+/*default styling for an individual job box*/
+.job {
+  width:400px;
+  height: fit-content;
+  /* border: rgb(245, 245, 245) 2px solid; */
+  border: rgb(82, 0, 105) 2px solid;
+  background-color: white;
+  margin: 20px 20px;
+  margin-inline-end: 20px;
+  margin-inline-start: 20px;
+  margin-inline: 5px;
+  display: grid;
+}
+
+/*puts jobs with an aside (more important) to be placed first*/
+.job:has(aside) {
+  order:-1;
+}
+
+/*reveals full job description on hover*/
+.job:hover {
+  border: black 2px solid;
+  height: fit-content;
+}
+
+/*styling for the header portion (shows job title)*/
+.job .job_header {
+  display: flex;
+  margin: 0px 0px;
+  justify-content:space-between;
+  background-color: hsl(281, 100%, 70%);
+}
+
+/*styling for the name, (different from the job's reference number)*/
+.job .job_header .job_name{
+  margin: 0px 0px;
+  padding: 5px 5px;
+}
+
+/*styling for reference number, (different from the job's name)*/
+.job .job_header .job_id{
+  margin: 0px 0px;
+  padding: 3px 3px;
+  color: white;
+  font-family: 'Andale Mono', Courier, monospace;
+}
+
+/*styling for the content portion (description) of the job*/
+.job .job_content{
+  padding: 5px 5px;
+  margin: 0px 0px;
+  background-color: white;
+  overflow: hidden;
+
+  max-height: 50px;
+}
+
+/*styling for the elipsis shown when not expanded*/
+.job .job_elipsis{
+  padding: 0px 0px;
+  margin: 0px 0px;
+  height: 20px;
+  background-color: white;
+  /* background-color: black; */
+}
+
+/*uses overflow clip if allowed by browser (some don't have it)*/
+@supports (overflow:clip) {
+  .job .job_content{
+    overflow: clip;
+
+    overflow-clip-margin: 20px;
+  }
+
+  .job .job_elipsis{
+    background-image: url("images/white-gradient.png");
+    background-repeat: repeat-x;
+    background-color: rgba(0,0,0,0);
+    background-size: 20px;
+  }
+}
+
+/*allows the job content to expand to the full height when hovered over*/
+.job:hover .job_content{
+  padding: 5px 5px;
+  margin: 0px 0px;
+  background-color: white;
+  max-height: none;
+}
+
+/*gives the h3 in the elipsis some margin and removes its padding*/
+.job .job_elipsis h3{
+  padding: 0px 0px;
+  margin: 0px 5px;
+}
+
+/*hides the elipsis when expanded*/
+.job:hover .job_elipsis{
+  display: none;
+}
+
+/*removes padding and margin from text in the content*/
+.job .job_content p{
+  padding: 0px 0px;
+  margin: 0px 0px;
+}
+/*adds extra padding to the unordered lists, (or else it looks broken)*/
+.job .job_content ul{
+  padding: 0px 20px;
+  margin: 0px 0px;
+}
+/*JOB PAGE SPECIFIC CSS END*/

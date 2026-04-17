@@ -145,12 +145,6 @@ nav a:hover {
   color:rgb(82, 0, 105);
 }
 
-th, td {
-  padding: 20px;
-  font-size: larger;
-  border: 4px solid powderblue
-}
-
 ul {font-size: large;}
 
 nav a{

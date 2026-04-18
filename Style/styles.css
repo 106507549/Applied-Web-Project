@@ -132,6 +132,25 @@ nav a {
   padding: 10px;
 }
 
+caption {font-size: large;}
+
+th {
+        background-color: hsl(281, 100%, 70%);
+        color: white;
+        font-size: large;
+        border: 4px solid black;
+        padding: 20px;
+        font-size: larger;
+}
+
+    td {
+        padding: 20px;
+        font-size: larger;
+        border: 4px solid black;
+        padding: 20px;
+        font-size: larger;
+}
+
 /* #search_button{
   background-color: white;
   border: lightgray 2px solid;
@@ -450,3 +469,14 @@ aside {
   margin: 0px 0px;
 }
 /*JOB PAGE SPECIFIC CSS END*/
+
+
+/* ABOUT PAGE CSS */
+main {padding: 1%;}
+
+        dl{} 
+
+        dt{font-size: large;}
+
+        dt:hover
+        {color: rgb(82, 0, 105)}

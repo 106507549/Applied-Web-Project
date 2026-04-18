@@ -108,8 +108,6 @@ body {
     max-width: 100%;
 }
 
-/* For buttons in the apply page */
-
 
 /* For sections in the index page */
 
@@ -157,9 +155,9 @@ nav .current{
 }
 
 nav .current:hover {
-        background-color: hsl(281, 100%, 70%);
-        color: white;
-    }
+  background-color: hsl(281, 100%, 70%);
+  color: white;
+}
 
 /*
 What was this for?
@@ -187,6 +185,13 @@ fieldset {
   padding-right: 5%;
   padding-left: 5%;
   margin-bottom: 2.5%;
+}
+
+/*Used this to figure this out
+https://www.w3schools.com/CSS/tryit.asp?filename=trycss_sel_attribute_value */
+input[type=checkbox]{
+  margin-right: 3%;
+  margin-left: 0%;
 }
 
 #formDiv {

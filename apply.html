@@ -24,7 +24,6 @@ Other skills	        Textarea
     <link rel="stylesheet" href="style/styles.css">
     <style>
         main{
-            
             border: 0px;
             padding: 0px;
         }
@@ -59,13 +58,16 @@ Other skills	        Textarea
     </header>
 
     <main>
+        <!--Page explanation and link to job page-->
         <br>
         <h2 style="font-size: 40px; margin: 20px; text-align: center;">Fill in the required information below to apply</h2>
         <p style="text-align: center; font-size: larger;">For more info on available jobs click <a href="jobs.html">here</a></p>
         <br>
         <hr>
         
-        <div id="formDiv">
+        <!--Div containing the background image and form-->
+        <container id="formDiv">
+            <!--Div containing thr form, helps make the border for styling-->
             <div id="formBorder">
                 <h3 style="font-size: 200%; text-align: center; margin-bottom: 20px;">Application form:</h3>
                 <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
@@ -163,14 +165,38 @@ Other skills	        Textarea
                     </div>
                 </form>
             </div>
-        </div>        
+        </container>        
     </main>
 
-    <!--footer at bottom of page-->
+    <!--footer at bottom of page containing: navigation, contact info and ackowledgement of Country-->
     <footer>
-        <br>
-        idk, footer stuff i guess
-        <br>
+        <!--Additional navigation at the bottom of the page-->
+        <ul>
+            <li><h3>Pages</h3></li>
+            <li><a href="index.html">Main</a></li>
+            <li><a href="about.html" class="current">About</a></li>
+            <li><a href="apply.html">Apply</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+        </ul>
+
+
+        <!--Acknowledgement of Country. Got the ackowledgement of Country from:
+        https://www.reconciliation.org.au/reconciliation/acknowledgement-of-country-and-welcome-to-country /-->
+        <div id="Acknowledgement">
+            <h3>Acknowledgement of Country</h3>
+            <p>Retail Wizards acknowledges the Traditional Owners of Country throughout Australia.</p> 
+            <p>We pay our respects to Elders past and present.</p>
+        </div>
+        
+        <!--Contact info/required project links-->
+        <div class="Projectlinks">
+            <ul>
+                <li><h3>Contact us</h3></li>
+                <li><a href="https://github.com/106507549/Applied-Web-Project">Github Page</a></li>
+                <li><a href="https://group-name-optional.atlassian.net/jira/software/projects/SCRUM/boards/1">Jira Project Page</a></li>
+                <li><a href="mailto:retailwizards.com">Contact us</a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>

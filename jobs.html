@@ -1,17 +1,9 @@
-<!-- REQUIREMENTS:
-Include at least two job position descriptions using semantic HTML.
-
-    Each job must include:
-        Reference number (exactly 5 alphanumeric characters)
-        Job title and short description
-        Salary and reporting line
-        Key responsibilities
-        Essential and preferable requirements
-    Use headings with at least two levels
-    Use multiple <section> elements
-    Include one ordered list and one unordered list
-    Include at least one <aside> element
-    Content must be realistic, concise, and industry‑appropriate -->
+<!-- Jobs page HTML
+ largely done by Oliver,
+ last edited 18/4/2026,
+ 
+ new code sourced from links below
+-->
 
 <!-- source for overflow text code
     https://stackoverflow.com/questions/27441404/how-to-expand-a-div-and-its-contents-on-hover-->
@@ -69,17 +61,17 @@ Include at least two job position descriptions using semantic HTML.
     
     <!--page-specific HTML for jobs-->
     <main>
-        <h2 style="font-size: 40px; margin: 20px;">Currently listed jobs:</h2>
+        <h2 id="page_title" style="font-size: 40px; margin: 20px;">Currently listed jobs:</h2>
 
-        <section id="jobs">
+        <section id="jobs" aria-labelledby="page_title">
             <!--first job-->
             <section class="job">
-                <section class="job_header">
+                <div class="job_header">
                     <h2 class="job_name"> Junior Web Developer</h2>
                     <h3 class="job_id">#A8FC2</h3>
-                </section>
+                </div>
                 
-                <section class="job_content">
+                <div class="job_content">
                     <aside>closing soon</aside>
                     <p>help create unique and creative websites for clients to meet their needs</p>
                         <ul>
@@ -98,20 +90,20 @@ Include at least two job position descriptions using semantic HTML.
                                 </ul>
                             </li>
                         </ul>
-                </section>
-                <section class="job_elipsis">
+                </div>
+                <div class="job_elipsis">
                     <h3><strong>...</strong></h3>
-                </section>
+                </div>
             </section>
 
             <!--second job-->
             <section class="job">
-                <section class="job_header">
+                <div class="job_header">
                     <h2 class="job_name"> Junior UX Developer</h2>
                     <h3 class="job_id">#C84HJ</h3>
-                </section>
+                </div>
                 
-                <section class="job_content">
+                <div class="job_content">
                     <p>help create unique and creative websites for clients to meet their needs</p>
                         <ul>
                             <li>Salary: $60,000</li>
@@ -129,20 +121,20 @@ Include at least two job position descriptions using semantic HTML.
                                 </ul>
                             </li>
                         </ul>
-                </section>
-                <section class="job_elipsis">
+                </div>
+                <div class="job_elipsis">
                     <h3><strong>...</strong></h3>
-                </section>
+                </div>
             </section>
 
             <!--third job-->
             <section class="job">
-                <section class="job_header">
+                <div class="job_header">
                     <h2 class="job_name"> Senior Project Manager</h2>
                     <h3 class="job_id">#FO8BI</h3>
-                </section>
+                </div>
                 
-                <section class="job_content">
+                <div class="job_content">
                     <aside>closing soon</aside>
                     <p>Manage a team of developers to create industry leading websites for clients.</p>
                         <ul>
@@ -162,20 +154,20 @@ Include at least two job position descriptions using semantic HTML.
                                 </ul>
                             </li>
                         </ul>
-                </section>
-                <section class="job_elipsis">
+                </div>
+                <div class="job_elipsis">
                     <h3><strong>...</strong></h3>
-                </section>
+                </div>
             </section>
 
             <!--fourth job-->
             <section class="job">
-                <section class="job_header">
+                <div class="job_header">
                     <h2 class="job_name"> Back-end Programmer</h2>
                     <h3 class="job_id">#ST6HV</h3>
-                </section>
+                </div>
                 
-                <section class="job_content">
+                <div class="job_content">
                     <p>Develop and maintain back-end systems</p>
                         <ul>
                             <li>Salary: $80,000</li>
@@ -195,20 +187,20 @@ Include at least two job position descriptions using semantic HTML.
                                 </ul>
                             </li>
                         </ul>
-                </section>
-                <section class="job_elipsis">
+                </div>
+                <div class="job_elipsis">
                     <h3><strong>...</strong></h3>
-                </section>
+                </div>
             </section>
 
             <!--fifth job-->
             <section class="job">
-                <section class="job_header">
+                <div class="job_header">
                     <h2 class="job_name"> Work Experience Placement</h2>
                     <h3 class="job_id">#GXT83</h3>
-                </section>
+                </div>
                 
-                <section class="job_content">
+                <div class="job_content">
                     <p>Develop and maintain back-end systems</p>
                         <ul>
                             <li>Salary: $0</li>
@@ -226,20 +218,20 @@ Include at least two job position descriptions using semantic HTML.
                                 </ul>
                             </li>
                         </ul>
-                </section>
-                <section class="job_elipsis">
+                </div>
+                <div class="job_elipsis">
                     <h3><strong>...</strong></h3>
-                </section>
+                </div>
             </section>
 
             <!--sixth job-->
             <section class="job">
-                <section class="job_header">
+                <div class="job_header">
                     <h2 class="job_name"> Product Manager</h2>
                     <h3 class="job_id">#W41XJ</h3>
-                </section>
+                </div>
                 
-                <section class="job_content">
+                <div class="job_content">
                     <p>Ensure all products are to the highest quality</p>
                         <ul>
                             <li>Salary: $70,000</li>
@@ -257,17 +249,17 @@ Include at least two job position descriptions using semantic HTML.
                                 </ul>
                             </li>
                         </ul>
-                </section>
-                <section class="job_elipsis">
+                </div>
+                <div class="job_elipsis">
                     <h3><strong>...</strong></h3>
-                </section>
+                </div>
             </section>
 
         </section>
         
         <!--section describing stuff required for all jobs-->
-        <section style="margin: 20px;">
-            <h2>Criteria for all jobs:</h2>
+        <section style="margin: 20px;" aria-labelledby="criteria">
+            <h2 id="criteria">Criteria for all jobs:</h2>
             <p>
                 <ol>
                     <li>Must live in Australia</li>

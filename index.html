@@ -22,20 +22,19 @@ Company image
 
     <!-- Credits for searchbar: https://www.w3schools.com/HOWTO/howto_css_searchbar.asp
     Credits for bordering image: https://www.w3schools.com/csSref/css3_pr_border-image.php 
+    Credits for moving image:https://stackoverflow.com/questions/12184456/how-do-i-make-another-image-appear-on-hover
     Credits for footer: Oliver Hanly-->
 
     <style>
+        nav a {
+            color: white;
+            padding: 0.6em 0.6em;
+        }
 
-    nav a{
-        color: white;
-        padding: 0.6em 0.6em;
-    }
-
-    main {
-        padding: 5px 5px;
-    }
-
-</style>
+        main {
+            padding: 5px 5px;
+        }
+    </style>
 </head>
 
 
@@ -43,10 +42,13 @@ Company image
 
     <header>
         <div style="display: flex; align-items: center;">
-            <div id="logo"><a href="index.html"><img src="../images/retail-wizard-white.png" id="logo_image" alt="Retail Wizards Logo" title="Retail Wizards"> </a></div>
-            <a href="index.html" style="text-decoration: none;"> <h1>Retail Wizards</h1> </a>
+            <div id="logo"><a href="index.html"><img src="../images/retail-wizard-white.png" id="logo_image"
+                        alt="Retail Wizards Logo" title="Retail Wizards"> </a></div>
+            <a href="index.html" style="text-decoration: none;">
+                <h1>Retail Wizards</h1>
+            </a>
         </div>
-        
+
         <!--two padding divs to make spacing nicer-->
         <div></div>
         <div></div>
@@ -67,7 +69,8 @@ Company image
         <aside> <!-- Company slogan -->
             <h2><em>Casting our sights on your sites</em></h2>
         </aside>
-        <p>At <strong>Retail Wizards</strong>, we aim to inspire and provide individuals with the opportunity to fulfill their business dreams
+        <p>At <strong>Retail Wizards</strong>, we aim to inspire and provide individuals with the opportunity to fulfill
+            their business dreams
             by helping them to
             design their own websites.</p>
         <p>Our employees are experienced in a variety of programming languages, tailored perfectly for your business
@@ -101,19 +104,23 @@ Company image
             </tbody>
         </table>
         <p></p>
-        <!-- <img src="Images/thing.png" alt="Company group photo">
-        <p><em>A picture of three employees smiling happily.</em></p> !-->
+     
 
-        
+        <div id="wrapper">
+            <img class="static-pic" src="Images/staticImage.png" alt="Default image">
+            <img class="static-pic-exit" src="Images/hoverImage.png"  alt="Hovered image">
+        </div>
 
-       
+
     </main>
 
     <!--footer at bottom of page containing: navigation, contact info and ackowledgement of Country-->
     <footer>
         <!--Additional navigation at the bottom of the page-->
         <ul>
-            <li><h3>Pages</h3></li>
+            <li>
+                <h3>Pages</h3>
+            </li>
             <li><a href="index.html">Main</a></li>
             <li><a href="about.html" class="current">About</a></li>
             <li><a href="apply.html">Apply</a></li>
@@ -125,19 +132,23 @@ Company image
         https://www.reconciliation.org.au/reconciliation/acknowledgement-of-country-and-welcome-to-country /-->
         <div id="Acknowledgement">
             <h3>Acknowledgement of Country</h3>
-            <p>Retail Wizards acknowledges the Traditional Owners of Country throughout Australia.</p> 
+            <p>Retail Wizards acknowledges the Traditional Owners of Country throughout Australia.</p>
             <p>We pay our respects to Elders past and present.</p>
         </div>
-        
+
         <!--Contact info/required project links-->
         <div class="Projectlinks">
             <ul>
-                <li><h3>Contact us</h3></li>
+                <li>
+                    <h3>Contact us</h3>
+                </li>
                 <li><a href="https://github.com/106507549/Applied-Web-Project">Github Page</a></li>
-                <li><a href="https://group-name-optional.atlassian.net/jira/software/projects/SCRUM/boards/1">Jira Project Page</a></li>
+                <li><a href="https://group-name-optional.atlassian.net/jira/software/projects/SCRUM/boards/1">Jira
+                        Project Page</a></li>
                 <li><a href="mailto:retailwizards.com">Contact us</a></li>
             </ul>
         </div>
     </footer>
 </body>
+
 </html>

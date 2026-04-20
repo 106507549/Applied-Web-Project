@@ -160,12 +160,6 @@ td {
   font-size: larger;
 }
 
-/* #search_button{
-  background-color: white;
-  border: lightgray 2px solid;
-  border-radius: 5px;
-} */
-
 nav a:hover {
   background-color: white;
   color: rgb(82, 0, 105);

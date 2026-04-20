@@ -198,11 +198,6 @@ nav .current:hover {
   display: inline;
 }
 
-/*
-What was this for?
-aside:hover {display: none}*/
-
-/* I thought it would make it look more interesting but it was probably useless */
 
 /*  APPLY PAGE SPECIFIC CSS */
 
@@ -219,13 +214,15 @@ fieldset {
   margin-bottom: 2.5%;
 }
 
-/*Used this to figure this out
+/*Creates better spacing for checkboxes
+Used this to figure this out
 https://www.w3schools.com/CSS/tryit.asp?filename=trycss_sel_attribute_value */
 input[type=checkbox] {
   margin-right: 3%;
   margin-left: 0%;
 }
 
+/*Centers the form and makes the background have the magic waves*/
 #formDiv {
   display: flex;
   justify-content: center;
@@ -241,6 +238,7 @@ input[type=checkbox] {
   width: 100%;
 }
 
+/*Makes the fieldsets appear side by side in the form*/
 #FieldsetsFloatedRight {
   float: left;
   width: 50%;
@@ -270,6 +268,7 @@ input[type=checkbox] {
   margin-left: 5%;
 }
 
+/*Creates the form border an dbox shadow*/
 #formBorder {
   box-shadow: 10px 7.5px 10px #ccc;
   background-color: white;
@@ -281,6 +280,7 @@ input[type=checkbox] {
   min-width: fit-content;
 }
 
+/*Fieldset specific sizes and spacing to make them line up nicely*/
 #JobReferenceNumberFieldset {
   height: 4.4em;
   padding-bottom: 0em;
@@ -322,8 +322,7 @@ input[type=checkbox] {
   margin-bottom: 2.5%;
 }
 
-input,
-select {
+input, select {
   margin-bottom: 2.5%;
 }
 
@@ -344,6 +343,8 @@ select {
 }
 
 /*  APPLY PAGE SPECIFIC CSS END */
+
+
 
 /* JOB PAGE SPECIFIC CSS*/
 
@@ -575,4 +576,3 @@ img[src*="Images/group-photo.png"] {
   float: left;
   color: white;
 }
-

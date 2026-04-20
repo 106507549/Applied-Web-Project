@@ -189,6 +189,8 @@ nav .current:hover {
   color: white;
 }
 
+/*When hovered over the, after image appears alongside the before on the index page */
+
 .static-pic-exit {
   display: none;
 }
@@ -201,12 +203,6 @@ What was this for?
 aside:hover {display: none}*/
 
 /* I thought it would make it look more interesting but it was probably useless */
-
-/*img[src*="Images/thing.png"] {
-  border: 2px solid black;
-}
-
-
 
 /*  APPLY PAGE SPECIFIC CSS */
 
@@ -534,3 +530,16 @@ dt:hover {
   color: white;
   font-size: large;
 }
+
+img[src*="Images/group-photo.png"] {
+  border: 4px solid black;
+}
+
+#groupphototext {
+  border-radius: 5px;
+  background-color: hsl(281, 100%, 70%);
+  border: solid rgb(54, 23, 54);
+  font-size: medium;
+  float: left;
+}
+

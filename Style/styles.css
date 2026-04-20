@@ -576,3 +576,7 @@ img[src*="Images/group-photo.png"] {
   float: left;
   color: white;
 }
+
+caption {
+  font-size: xx-small;
+}
